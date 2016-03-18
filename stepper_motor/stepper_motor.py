@@ -18,6 +18,10 @@ class StepperMotor:
 		GPIO.setup(pin2, GPIO.OUT)
 		GPIO.setup(pin3, GPIO.OUT)
 		GPIO.setup(pin4, GPIO.OUT)
+	def setMode(self, mode=2):
+		self.modo = mode
+	def setDelay(self, delay):
+		self.delay = delay
 	def stepForward(self):
 		if self.modo==1:
 			GPIO.output(self.p1, True)
