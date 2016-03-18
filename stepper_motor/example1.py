@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import RPi.GPIO as GPIO
+
 from stepper_motor import StepperMotor
 
 # Instance the motor supplying GPIO ports
@@ -11,3 +15,5 @@ motor.goForward(100)
 # Go 150 steps backwards
 # Avanza 150 pasos a la izquierda
 motor.goBackwards(150)
+
+GPIO.cleanup()
