@@ -10,7 +10,7 @@ motor = StepperMotor(12,16,20,21)
 
 # Go 360 degrees clockwise (full turn)
 # Avanza 360 grados en sentido del reloj (vuelta completa)
-motor.clockwise(100)
+motor.clockwise(360)
 
 # Espera un segundo
 time.sleep(1)
